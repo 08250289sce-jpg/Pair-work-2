@@ -47,82 +47,82 @@ for name in student: # using for loop and refering to student in dict
 
 # Giving the instruction
 
-print("For the quizes below refer the given unique values ")
+    print("For the quizes below refer the given unique values ")
 
-#question 1 with options
-print("\n Q1)What is the sum of unique_value + 4") # question that uses unique values
-print("A:", unique_value + 1) # options that uses unoque values
-print("B:", unique_value + 2)
-print("C:", unique_value + 3)
-print("D:", unique_value + 4) # correct option
+    #question 1 with options
+    print("\n Q1)What is the sum of unique_value + 4") # question that uses unique values
+    print("A:", unique_value + 1) # options that uses unoque values
+    print("B:", unique_value + 2)
+    print("C:", unique_value + 3)
+    print("D:", unique_value + 4) # correct option
 
-ans1 = input("write your correct option (A/B/C/D): ")
-if ans1 == "D":
-    score = score + 1
-    print("Correct Answer")
-else:
-    print("Incorrect answer!! and correct option is A")
-
-
-#question 2 
-print("\n Q2)What is the product of unique_value  * 5")
-print("A:", unique_value * 3)
-print("B:", unique_value * 5)# this is the correct ans
-print("C:", unique_value * 4)
-print("D:", unique_value * 1)
-
-ans2 = input("write your correct option (A/B/C/D): ")
-if ans2 == "B":
-    score = score + 1
-    print("Correct Answer")
-else:
-    print("Incorrect answer!! and correct option is B ")
-
-#question 3
-print("\nQ3) What is the quotient of unique_value / 2?")
-print("A:", f"{unique_value / 1:.2f}")
-print("B:", f"{unique_value / 3:.2f}") # using string formating 
-print("C:", f"{unique_value / 2:.2f}")   # Correct option
-print("D:", f"{unique_value / 4:.2f}")
-
-ans3 = input("write your correct option (A/B/C/D): ")
-if ans3 == "C":
-    score = score + 1
-    print("Correct Answer")
-else:
-    print("Incorrect answer!! and correct option is B ")
-
-student[name] = score
-
-# now create the permormance and checking for eligibility of certificate
-print("\nResults of Quiz")
-
-for name in student: # using for loops through each student name in the dictionary
-    score = student[name] # Get the score of the current student from the dictionary
-    print("Student Name:",name)
-    print("Score:", score)
-
-# now check performance and certificate
-    if score == 3:
-        print("Excellent and Eligible for Certificate")
-    elif score == 2:
-        print("Good and Eligible for certificate")
-    elif score == 1:
-        print("Average and not elifible for certificate") 
+    ans1 = input("write your correct option (A/B/C/D): ")
+    if ans1 == "D":
+        score = score + 1
+        print("Correct Answer")
     else:
-        print("POOR PERFORMANCE !! Need Improvement ")
+        print("Incorrect answer!! and correct option is A")
 
-# star pattern according to their grade
-print("Pattern:")
 
-if score == 0:
-        print("")  
-        # No pattern for 0 score
+    #question 2 
+    print("\n Q2)What is the product of unique_value  * 5")
+    print("A:", unique_value * 3)
+    print("B:", unique_value * 5)# this is the correct ans
+    print("C:", unique_value * 4)
+    print("D:", unique_value * 1)
 
-else:
-    for i in range(1, score + 1):
-        print("*" * i)
-        
+    ans2 = input("write your correct option (A/B/C/D): ")
+    if ans2 == "B":
+        score = score + 1
+        print("Correct Answer")
+    else:
+        print("Incorrect answer!! and correct option is B ")
+
+    #question 3
+    print("\nQ3) What is the quotient of unique_value / 2?")
+    print("A:", f"{unique_value / 1:.2f}")
+    print("B:", f"{unique_value / 3:.2f}") # using string formating 
+    print("C:", f"{unique_value / 2:.2f}")   # Correct option
+    print("D:", f"{unique_value / 4:.2f}")
+
+    ans3 = input("write your correct option (A/B/C/D): ")
+    if ans3 == "C":
+        score = score + 1
+        print("Correct Answer")
+    else:
+        print("Incorrect answer!! and correct option is B ")
+
+    student[name] = score
+
+    # now create the permormance and checking for eligibility of certificate
+    print("\nResults of Quiz")
+
+    for name in student: # using for loops through each student name in the dictionary
+        score = student[name] # Get the score of the current student from the dictionary
+        print("Student Name:",name)
+        print("Score:", score)
+
+    # now check performance and certificate
+        if score == 3:
+            print("Excellent and Eligible for Certificate")
+        elif score == 2:
+            print("Good and Eligible for certificate")
+        elif score == 1:
+            print("Average and not elifible for certificate") 
+        else:
+            print("POOR PERFORMANCE !! Need Improvement ")
+
+    # star pattern according to their grade
+        print("Pattern:")
+
+        if score == 0:
+                print("")  
+                # No pattern for 0 score
+
+        else:
+            for i in range(1, score + 1):
+                print("*" * i)
+            
 
 
 

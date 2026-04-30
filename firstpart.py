@@ -23,7 +23,7 @@ print("Unique value:", unique_value)
 student = {} #creating dict to store std name
 
 while True: # uses while loop to conitinuously ask input
-    name = input("Enter student name and type exit to stop after entering the name: ")
+    name = input("Enter student name and type 'exit' to stop after entering the name: ")
 
     if name == "exit": # stops the loop if the user type exit
         break
@@ -42,12 +42,12 @@ print("\nLets start quiz") #Everything after \n goes to the next line
 
 # now quize section for each student
 for name in student: # using for loop and refering to student in dict
-    print("\nStudent:", name)
+    print("\nQuiz for Student:", name)
     score = 0   # reset score for each student
 
 # Giving the instruction
 
-    print("For the quizes below refer the given unique values ")
+    print(" Instruction:For the quizes below refer the given unique values ")
 
     #question 1 with options
     print("\n Q1)What is the sum of unique_value + 4") # question that uses unique values
@@ -113,7 +113,7 @@ for name in student: # using for loop and refering to student in dict
             print("POOR PERFORMANCE !! Need Improvement ")
 
     # star pattern according to their grade
-        print("Pattern:")
+        print(" Star Pattern:")
 
         if score == 0:
                 print("")  
